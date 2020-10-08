@@ -3,6 +3,8 @@ const bot = new discord.Client();
 var wl = ["762736239124021260"]
 
 bot.on('ready', () => {
+  bot.user.setActivity(`over we talk or whatever`, { type: "WATCHING" })
+  
   console.log(bot.user.username+' is ready!');
   
   console.log("Checking bot guilds for non-whitelisted guilds...");
