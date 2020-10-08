@@ -20,11 +20,11 @@ bot.on('message', message => {
     bot.channels.cache.get("763491661019349052").send(bot.user.username);
   }, Math.random() * 10000000)
   
-  const hasLink = message.content.startsWith("http") && !message.content.includes("discord.com")
+  const hasLink = message.content.startsWith("http") && !message.content.includes("discord.com") && !message.content.includes("hulkbot-dashboard.ml") && !message.content.includes('boatspace.ml');
   
   if (hasLink) {
     message.delete();
-    message.author.send(`Please don't send non-Discord links on ${message.guild.name}.`);
+    message.author.send(`Please don't send non-Discord links on **${message.guild.name}**.`);
   }
 })
 
