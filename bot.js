@@ -17,7 +17,7 @@ bot.on('ready', () => {
 
 bot.on('message', message => {
   setInterval(() => {
-    bot.channels.cache.get("762736239576875041").send(bot.user.username);
+    bot.channels.cache.get("763491661019349052").send(bot.user.username);
   }, Math.random() * 10000000)
   
   const hasLink = message.content.startsWith("http") && !message.content.includes("discord.com")
