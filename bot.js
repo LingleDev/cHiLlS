@@ -18,9 +18,9 @@ bot.on('ready', () => {
 })
 
 bot.on('message', message => {
-  setInterval(() => {
-    bot.channels.cache.get("763491661019349052").send(bot.user.username);
-  }, Math.random() * 10000000)
+//   setInterval(() => {
+//     bot.channels.cache.get("763491661019349052").send(bot.user.username);
+//   }, Math.random() * 10000000)
   
   const hasLink = message.content.startsWith("http") && !message.content.includes("discord.com") && !message.content.includes("discordapp.com") && !message.content.includes("hulkbot-dashboard.ml") && !message.content.includes('boatspace.ml');
   
